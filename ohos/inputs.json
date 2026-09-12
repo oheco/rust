@@ -1,0 +1,56 @@
+{
+  "version": "1.98.1",
+  "date": "2026-09-03",
+  "components": [
+    {
+      "component": "cargo",
+      "target": "aarch64-unknown-linux-ohos",
+      "url": "https://static.rust-lang.org/dist/2026-09-03/cargo-1.98.1-aarch64-unknown-linux-ohos.tar.xz",
+      "sha256": "e357374367fb4c09ad9332215d51b82380001bb9cddc75eea9a6ba70506f64a5",
+      "filename": "cargo-1.98.1-aarch64-unknown-linux-ohos.tar.xz"
+    },
+    {
+      "component": "rustc",
+      "target": "aarch64-unknown-linux-ohos",
+      "url": "https://static.rust-lang.org/dist/2026-09-03/rustc-1.98.1-aarch64-unknown-linux-ohos.tar.xz",
+      "sha256": "8cdbe6ba98cdf75ff515477dcf3831c003dd7ddd8b441d6afd4c5d9ea84b6e9d",
+      "filename": "rustc-1.98.1-aarch64-unknown-linux-ohos.tar.xz"
+    },
+    {
+      "component": "rust-std",
+      "target": "aarch64-unknown-linux-ohos",
+      "url": "https://static.rust-lang.org/dist/2026-09-03/rust-std-1.98.1-aarch64-unknown-linux-ohos.tar.xz",
+      "sha256": "73423cc38ef0b323f74f4ab2b725de4a9e4ee285d835098e225745eceffac8bb",
+      "filename": "rust-std-1.98.1-aarch64-unknown-linux-ohos.tar.xz"
+    },
+    {
+      "component": "rustfmt-preview",
+      "target": "aarch64-unknown-linux-ohos",
+      "url": "https://static.rust-lang.org/dist/2026-09-03/rustfmt-1.98.1-aarch64-unknown-linux-ohos.tar.xz",
+      "sha256": "4480a065cc1dc12b7dadbfec50dbda007501e83a30f6bca2318249d4e0036f2f",
+      "filename": "rustfmt-1.98.1-aarch64-unknown-linux-ohos.tar.xz"
+    },
+    {
+      "component": "clippy-preview",
+      "target": "aarch64-unknown-linux-ohos",
+      "url": "https://static.rust-lang.org/dist/2026-09-03/clippy-1.98.1-aarch64-unknown-linux-ohos.tar.xz",
+      "sha256": "104690c94bd326757d44d97e4cc1bf59c196045767e60307caca0e427ce83cc2",
+      "filename": "clippy-1.98.1-aarch64-unknown-linux-ohos.tar.xz"
+    },
+    {
+      "component": "rust-src",
+      "target": "*",
+      "url": "https://static.rust-lang.org/dist/2026-09-03/rust-src-1.98.1.tar.xz",
+      "sha256": "5c846ebcebcc7e2e0777a4cdaa12051691593f16a7e94edbae5e6241cc62d98c",
+      "filename": "rust-src-1.98.1.tar.xz"
+    },
+    {
+      "component": "rust-analyzer-preview",
+      "target": "aarch64-unknown-linux-ohos",
+      "url": "https://static.rust-lang.org/dist/2026-09-03/rust-analyzer-1.98.1-aarch64-unknown-linux-ohos.tar.xz",
+      "sha256": "cc0729b3326331d3121e1d25cebd5cf8c17ba7113074227cf284296485b6cefd",
+      "filename": "rust-analyzer-1.98.1-aarch64-unknown-linux-ohos.tar.xz"
+    }
+  ],
+  "upstream_commit": "48a229ceaefd4985c50990b14116b6d856af0985"
+}

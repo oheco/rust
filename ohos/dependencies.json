@@ -1,0 +1,20 @@
+[
+  {
+    "name": "openssl",
+    "version": "3.5.8",
+    "filename": "openssl-3.5.8.tar.gz",
+    "url": "https://github.com/openssl/openssl/releases/download/openssl-3.5.8/openssl-3.5.8.tar.gz",
+    "sha256": "a8f84a39918ec6415ce765d9b429d313ba97b8143169c172e734b9514464f5b2",
+    "license": "Apache-2.0",
+    "local_changes": "Built-in CA file /etc/ssl/certs/cacert.pem; shared no-module no-tests build."
+  },
+  {
+    "name": "perl-build-tool",
+    "version": "5.44.0",
+    "filename": "perl-5.44.0-ohos-arm64.tar.gz",
+    "url": "https://github.com/Harmonybrew/ohos-perl/releases/download/5.44.0/perl-5.44.0-ohos-arm64.tar.gz",
+    "sha256": "053e5252d736fa55a98a09e5124ead6391103717eb3bd465c1da882705a9cfef",
+    "license": "Artistic-1.0-Perl OR GPL-1.0-or-later",
+    "scope": "Prebuilt native build tool only, not included in runtime package."
+  }
+]
