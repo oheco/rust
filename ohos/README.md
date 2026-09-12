@@ -28,7 +28,8 @@ requires the OHOS SDK's `clang`, `clang++`, `llvm-ar`, linker, sysroot and
 dependencies. OpenSSL 3.5.8 is built natively and included in this package;
 Cargo also uses the host's `libz.so` and `libc.so`.
 
-The default Rust linker adapter invokes SDK Clang and signs linked executables,
+The default Rust linker adapter invokes SDK Clang, includes its compiler-rt
+builtins archive when rustc disables default libraries, and signs executables,
 Cargo build scripts and proc-macro shared libraries before they are executed or
 loaded. It removes the previous output inode before rebuilding signed files.
 The adapter understands response files and paths containing spaces. Explicit

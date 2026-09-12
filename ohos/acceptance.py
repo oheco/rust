@@ -78,7 +78,7 @@ put('answer_macro/src/lib.rs','''extern crate proc_macro;
 #[proc_macro]
 pub fn answer(_: proc_macro::TokenStream) -> proc_macro::TokenStream { "42".parse().unwrap() }
 ''')
-put('app/native.c','int native_value(void) { return 42; }\n')
+put('app/native.c','int native_value(void) { char code[4]={0}; __builtin___clear_cache(code, code+sizeof(code)); return 42; }\n')
 put('app/build.rs','''use std::{env,path::PathBuf,process::Command};
 fn main() {
  let out = PathBuf::from(env::var_os("OUT_DIR").unwrap());

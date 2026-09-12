@@ -36,6 +36,18 @@ def main():
     # OHOS disallows rewriting an inode after it has been signed/executed.
     if linking and output.exists():
         output.unlink()
+    # rustc passes -nodefaultlibs. Native C dependencies can still need SDK
+    # helpers (for example PCRE2 JIT's __clear_cache), absent from Rust's rlib.
+    if linking and '-nodefaultlibs' in flat:
+        query = subprocess.run([cc, '--rtlib=compiler-rt', '-print-libgcc-file-name'],
+                               capture_output=True, text=True)
+        if query.returncode:
+            sys.stderr.write(query.stderr)
+            return query.returncode
+        builtins = Path(query.stdout.strip())
+        if not builtins.is_file():
+            sys.exit('OHOS SDK compiler-rt builtins archive not found: ' + str(builtins))
+        args = [*args, str(builtins)]
     result = subprocess.run([cc, *args])
     if result.returncode:
         return result.returncode
